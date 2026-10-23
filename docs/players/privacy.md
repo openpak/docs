@@ -32,13 +32,26 @@ for marketing.
 2. Choose **Delete account**, tick the confirmation, and confirm with your password (and your
    two-step code or a recovery code, if you use one).
 
-From that moment the account is closed: every session is signed out and nobody can sign in to
-it. Your friends, links and saves go with the account.
+From that moment the account is **closed**: every session is signed out, nobody can use it,
+it disappears from your friends' lists and the app stops notifying your devices.
 
-During the alpha, the final erasure is done by hand by the team, within one month. Some data
-(cloud saves, chat messages, help requests and crash reports) is not yet erased by the same
-step; the [Privacy policy](https://openpak.org/privacy) says exactly what is erased and how to
-ask for the rest to be removed.
+**For 30 days you can undo it.** Sign in again with your email address and password and you are
+offered to restore the account as it was; you can also ask us to restore it. Nothing is erased
+during these 30 days.
+
+**After 30 days it is erased everywhere, automatically**, and can no longer be restored: your
+profile and avatar, sign-in data, console links, presence and play history, friends, blocks and
+invitations, chat messages, cloud saves and storage credentials, help requests with their
+attachments, linked crash reports, votes and compatibility reports. Signing in with the old
+address then works as for an address that never had an account. Only an anonymised record
+remains, to hold your handle for 90 days, and moderation records keep pointing at it.
+
+Our database backups are rotated, so erased data lingers in a backup only until that backup is
+rotated out; backups are never used to bring an erased account back. The
+[Privacy policy](https://openpak.org/privacy) has the full list.
+
+<!-- OWNER REVIEW: no production database backup retention is documented (checked 2026-10-23).
+Add "for up to N days" here and on /privacy once the number is set. -->
 
 ## Questions and requests
 
