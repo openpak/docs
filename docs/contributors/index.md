@@ -26,6 +26,12 @@ bug reports and test results from real consoles and games. Code is welcome too.
 4. Never copy code across a licence wall. Facts are fine; code is not.
 5. Write commit messages in the imperative: what changed and why.
 
+## The name and logo
+
+The code is AGPL-3.0, and anyone may run it. Only OpenPak and its approved federation nodes may
+use the name "OpenPak" and the logo. A fork or independent network must use its own name, and
+may say it is "based on OpenPak software".
+
 The organisation-wide [CONTRIBUTING](https://github.com/openpak/.github/blob/main/CONTRIBUTING.md)
 and [Code of Conduct](https://github.com/openpak/.github/blob/main/CODE_OF_CONDUCT.md) apply to
 every repository.

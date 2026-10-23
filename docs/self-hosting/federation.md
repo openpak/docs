@@ -30,7 +30,7 @@ itself do not.
 ## The parts
 
 ```
-                           openpak.org (home)
+                             Europe (home)
         ┌──────────────────────────────────────────────────────────┐
         │  account core: the register of nodes and their keys       │
         │  website: the public list of regions, the announce door   │

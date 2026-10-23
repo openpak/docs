@@ -65,6 +65,9 @@ error 2124-3001.
 Yes. The code is AGPL-3.0. See [self-hosting](../self-hosting/index.md). You can also help the
 main network by running an [approved federation node](../self-hosting/become-a-node.md).
 
+Only OpenPak and its approved federation nodes may use the name "OpenPak" and the logo. Your
+own network needs its own name; you may say it is "based on OpenPak software".
+
 ## Is OpenPak affiliated with Nintendo, Microsoft or Sony?
 
 No. OpenPak is an independent community project.

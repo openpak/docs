@@ -16,6 +16,12 @@ There are two different things you can do:
 If what you want is to make OpenPak faster for players near you, a
 [federation node](become-a-node.md) is almost always the better choice.
 
+## The name and logo
+
+Anyone may run the software under the AGPL, but only OpenPak and its approved federation nodes
+may use the name "OpenPak" and the OpenPak logo. An independent network must use its own name
+and logo. It may say that it is "based on OpenPak software".
+
 ## Your obligations under the AGPL
 
 If you run a modified OpenPak service for other people over a network, the AGPL requires you

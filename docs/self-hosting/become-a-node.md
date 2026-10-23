@@ -9,8 +9,10 @@ openpak.org; a node only relays game traffic. Read [how federation works](federa
 - **A node is one region, one operator and one approval.** It runs on one or more servers.
 - **OpenPak approves every node.** Meeting the minimums makes a node eligible, not approved.
   Nothing is served from a node until a person at OpenPak approves it.
-- **Applications are only accepted for locations OpenPak wants**, through the form on
-  openpak.org.
+- **Applications are accepted from every location except mainland China and Russia**,
+  through the form on openpak.org. Within that, OpenPak approves nodes where it wants them.
+- **The box is dedicated to OpenPak.** OpenPak Node OS (Fedora CoreOS) is the preferred
+  install.
 - **Every server reports and is checked.** Each server announces every minute with a hardware
   report, and runs a daily bandwidth self-test that home times itself. A node that falls short
   leaves rotation automatically, and comes back once it is compliant again.
@@ -35,10 +37,15 @@ little less than a machine is sold with. The application page always shows the c
 
 ## Where nodes are wanted
 
-OpenPak keeps a list of wanted locations: a region, a country and a city, and how many nodes
-each one wants. Applications are only accepted for a location that is open and still wants
-more nodes. Anywhere else you get *"OpenPak is not looking for nodes there yet"* and can join a
-waitlist for your country. Europe is served by openpak.org itself.
+Applications are accepted from every location except nodes inside **mainland China and
+Russia**. Licensing, national firewalls, sanctions and surveillance law there conflict with the
+operator terms, so OpenPak cannot accept nodes in either. Players there are served from
+neighbouring regions.
+
+Within that, OpenPak keeps a list of wanted locations: a region, a country and a city, and how
+many nodes each one wants. The form takes applications for a location that is open and still
+wants more nodes. Anywhere else you get *"OpenPak is not looking for nodes there yet"* and can
+join a waitlist for your country. Europe (home) is served by OpenPak itself.
 
 ## How to apply
 
@@ -59,6 +66,9 @@ waitlist for your country. Europe is served by openpak.org itself.
    privately. The node starts out unapproved for traffic until its servers are up and checked.
 
 ## Bringing servers up
+
+Each server must be dedicated to OpenPak: run nothing else on the box. OpenPak Node OS (Fedora
+CoreOS) is the preferred install.
 
 Each server runs the OpenPak node compose setup with the node key (`OPENPAK_NODE_KEY`) and its
 own `SERVER_NAME`. On first start it joins the node and receives its own **server key**, stored
@@ -110,6 +120,10 @@ The full text is at [openpak.org/operators](https://openpak.org/operators). In s
 - **No logging or keeping of player data** beyond what running the relay needs at that moment:
   no packet captures, no kept IP logs, no per-player records, and no sharing, selling or
   analysing of traffic.
+- **Data processing agreement**: player IP addresses and game traffic are processed only to host
+  rooms. Logs go no further than operational need and are deleted within 7 days. No other use.
+  Security incidents are reported to OpenPak within 72 hours, and everything is deleted when
+  you leave.
 - **No modification of traffic**: relay it as it arrives, with no injection, blocking, delay or
   reordering. No modified OpenPak software, and the shared secrets are used for nothing else.
 - Keep a working security contact, and report a compromise or leaked key at once to
