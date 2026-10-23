@@ -14,7 +14,7 @@ OpenPak keeps backups of your game saves under your account, whichever machine m
 - **Harbor:** the same Save Data Cloud screen, in the emulated console.
 - **Other OpenPak emulators** sync saves automatically around a game session, with a conflict
   prompt when both sides changed. Those emulators are not ready yet; see
-  [emulators](setup/emulators.md).
+  [emulators](setup/emulators/index.md).
 
 Restoring a backup made in Harbor onto a physical Switch has not been tested yet.
 

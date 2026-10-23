@@ -41,4 +41,4 @@ Launch the game normally, without the launcher or the codes.
 
 ## The emulator
 
-Marina, the OpenPak Wii emulator, is not ready yet. See [emulators](emulators.md#marina-wii).
+Marina, the OpenPak Wii emulator, is not ready yet. See [emulators](emulators/marina.md).

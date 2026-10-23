@@ -39,4 +39,4 @@ Start nimbus and select the **Nintendo** account. To remove it completely, delet
 
 ## The emulator
 
-Azahar for OpenPak is not ready yet. See [emulators](emulators.md#azahar-for-openpak-3ds).
+Azahar for OpenPak is not ready yet. See [emulators](emulators/azahar.md).

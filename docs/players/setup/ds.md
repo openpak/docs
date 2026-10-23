@@ -25,4 +25,4 @@ code the game shows.
 ## The emulator
 
 melonDS for OpenPak has a WFC redirect built in, but no public build yet. See
-[emulators](emulators.md#melonds-for-openpak-ds).
+[emulators](emulators/melonds.md).

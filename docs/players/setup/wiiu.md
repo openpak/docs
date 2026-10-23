@@ -48,4 +48,4 @@ consoles yet.
 
 ## The emulator
 
-The OpenPak Wii U emulator, Quay, is not ready yet. See [emulators](emulators.md#quay-wii-u).
+The OpenPak Wii U emulator, Quay, is not ready yet. See [emulators](emulators/quay.md).

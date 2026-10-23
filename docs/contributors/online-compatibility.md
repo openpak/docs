@@ -18,7 +18,7 @@ Two rules sit above everything on this page:
 ## Choose the test client
 
 - **An OpenPak emulator first** where one exists. It is cheaper to restart and can show more of
-  what the game does. On the Switch that is [Harbor](../players/setup/emulators.md#harbor-switch).
+  what the game does. On the Switch that is [Harbor](../players/setup/emulators/harbor.md).
 - **Confirm on real hardware** before calling a game working. A result seen only in an emulator
   may be an emulator gap rather than a server bug.
 - **Multiplayer means separate machines**: a console plus an emulator, or emulators on

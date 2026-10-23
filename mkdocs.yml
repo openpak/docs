@@ -57,7 +57,16 @@ nav:
           - 3DS: players/setup/3ds.md
           - Wii: players/setup/wii.md
           - DS: players/setup/ds.md
-          - Emulators: players/setup/emulators.md
+          - Emulators:
+              - players/setup/emulators/index.md
+              - Harbor (Switch): players/setup/emulators/harbor.md
+              - Quay (Wii U): players/setup/emulators/quay.md
+              - Marina (Wii): players/setup/emulators/marina.md
+              - Azahar for OpenPak (3DS): players/setup/emulators/azahar.md
+              - melonDS for OpenPak (DS): players/setup/emulators/melonds.md
+              - Wharf (Xbox 360): players/setup/emulators/wharf.md
+              - Berth (Xbox): players/setup/emulators/berth.md
+              - Pier (PlayStation 3): players/setup/emulators/pier.md
       - Friends and chat: players/friends.md
       - Cloud saves: players/cloud-saves.md
       - Companion app: players/app.md
