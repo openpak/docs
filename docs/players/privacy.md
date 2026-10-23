@@ -46,12 +46,12 @@ attachments, linked crash reports, votes and compatibility reports. Signing in w
 address then works as for an address that never had an account. Only an anonymised record
 remains, to hold your handle for 90 days, and moderation records keep pointing at it.
 
-Our database backups are rotated, so erased data lingers in a backup only until that backup is
-rotated out; backups are never used to bring an erased account back. The
-[Privacy policy](https://openpak.org/privacy) has the full list.
+Mods you published stay available to other players, credited to "deleted user" and no longer
+linked to you; your mod favourites, and any mod submissions that were never published or were
+rejected or taken down, are erased.
 
-<!-- OWNER REVIEW: no production database backup retention is documented (checked 2026-10-23).
-Add "for up to N days" here and on /privacy once the number is set. -->
+Backups are kept for up to 14 days; an erased account disappears from them within 14 days and is
+never restored from them. The [Privacy policy](https://openpak.org/privacy) has the full list.
 
 ## Questions and requests
 
