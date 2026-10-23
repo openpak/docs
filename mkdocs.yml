@@ -1,0 +1,83 @@
+site_name: OpenPak Docs
+site_url: https://docs.openpak.org/
+site_description: Documentation for OpenPak, the open replacement online network for consoles and their emulators.
+repo_url: https://github.com/openpak/docs
+repo_name: openpak/docs
+edit_uri: edit/main/docs/
+copyright: Text licensed CC BY-SA 4.0. OpenPak is not affiliated with Nintendo, Microsoft or Sony.
+
+theme:
+  name: material
+  logo: assets/icon.svg
+  favicon: assets/icon.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Players:
+      - players/index.md
+      - Before you start: players/before-you-start.md
+      - Your account: players/account.md
+      - Setup:
+          - players/setup/index.md
+          - Switch: players/setup/switch.md
+          - Wii U: players/setup/wiiu.md
+          - 3DS: players/setup/3ds.md
+          - Wii: players/setup/wii.md
+          - DS: players/setup/ds.md
+          - Emulators: players/setup/emulators.md
+      - Friends and chat: players/friends.md
+      - Cloud saves: players/cloud-saves.md
+      - Companion app: players/app.md
+      - Troubleshooting: players/troubleshooting.md
+      - FAQ: players/faq.md
+      - Privacy and deletion: players/privacy.md
+  - Contributors:
+      - contributors/index.md
+      - Architecture: contributors/architecture.md
+      - Repositories: contributors/repositories.md
+      - Building and running: contributors/building.md
+      - Conventions: contributors/conventions.md
+      - Clean-room rule: contributors/clean-room.md
+      - Online compatibility: contributors/online-compatibility.md
+      - Signed redirect ceiling: contributors/signed-ceiling.md
+      - Port plan: contributors/ports.md
+      - Reporting bugs: contributors/reporting.md
+  - Self-hosting:
+      - self-hosting/index.md
+      - Deploying: self-hosting/deploy.md
+      - How federation works: self-hosting/federation.md
+      - Becoming a federation node: self-hosting/become-a-node.md
+  - License: license.md
