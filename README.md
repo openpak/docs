@@ -16,7 +16,7 @@ python3 -m venv .venv
 .venv/bin/mkdocs build --strict # what CI runs
 ```
 
-Every push to `main` is built with `--strict` and deployed to Cloudflare Pages.
+Every push to `main` is checked with `mkdocs build --strict` on GitHub and deployed by Cloudflare Workers Builds (`wrangler.jsonc` serves the built `site/`).
 
 ## Rules for pages
 

@@ -1,0 +1,9 @@
+// Cloudflare Workers static assets: Workers Builds runs `mkdocs build`, then serves site/.
+{
+  "name": "openpak-docs",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
