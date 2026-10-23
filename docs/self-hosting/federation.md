@@ -39,18 +39,21 @@ itself do not.
                  ▲ announce, once a minute       ▲ room reports
                  │                               │
         ┌────────┴───────────────────────────────┴──────────┐
-        │  node "au-sydney": game server (game role only),   │
-        │                    TURN relay, announce loop       │
+        │  node "au-sydney" (one or more servers):           │
+        │    game server (game role only), TURN relay,       │
+        │    announce loop on each server                    │
         └────────────────────────────────────────────────────┘
 ```
 
-- **The core** keeps the register: each node's id, name, country, the hash of its key, whether
-  it is approved, which services it last announced and when it was last seen. A request made
-  with a node's key is stamped with that node; a node cannot claim to be another.
-- **The website** is a node's only door. A node announces itself to
-  `POST https://openpak.org/api/v1/federation/announce` with its own key, so the core is never
-  exposed. `GET https://openpak.org/api/v1/regions` is the public list of approved nodes seen in
-  the last few minutes, with their services and live player counts. Every matchmaking server,
+- **The core** keeps the register: each node's id, name, country and region, whether it is
+  approved, and for each of its servers a key hash, the services it last announced, its latest
+  hardware report and bandwidth self-test, and when it was last seen. A request made with a
+  server's key is stamped with that server's node; a node cannot claim to be another.
+- **The website** is a node's only door. Each server joins its node once
+  (`POST https://openpak.org/api/v1/federation/join`) and then announces itself
+  (`POST https://openpak.org/api/v1/federation/announce`) with its own server key, so the core is
+  never exposed. `GET https://openpak.org/api/v1/regions` is the public list of nodes in
+  rotation, with their region, services and live player counts. Every matchmaking server,
   the status page and the app read it.
 - **The matchmaking servers** poll that list once a minute and place new rooms on it.
 
@@ -78,29 +81,32 @@ for its relay servers, it gets that node's TURN and STUN servers; otherwise home
 
 ## The announce cycle
 
-Once a minute a node posts what it runs, for example:
+Once a minute each of a node's servers posts what it runs, with a hardware report, for
+example:
 
 ```json
 {"services":{"photon":"203.0.113.9:22002","turn":"203.0.113.9:3478","stun":"203.0.113.9:3478"}}
 ```
 
-The core replaces the node's services and marks it as seen. A node that misses three announces
-drops out of the regions list, and within another minute the matchmaking servers stop placing
-rooms there. Rooms already on it keep going until they end.
+The core records the server's services and marks it as seen. A server that has not announced
+for three minutes takes its node out of rotation: the node drops out of the regions list, and
+within another minute the matchmaking servers stop placing rooms there. Rooms already on it keep
+going until they end. A daily bandwidth self-test, timed by home, is checked the same way.
 
 A service a node does not run is left out, and home's own is used for it. A node can be
 TURN-only, or game-server-only.
 
 ## Trust
 
-The node key authenticates announces and nothing else. It cannot read an account, a friend
-list or a link, and only home can create nodes or approve them.
+A node key can only enrol servers, and each server's own key can only announce and self-test.
+Neither can read an account, a friend list or a link, and only home can create, approve or
+revoke nodes and servers. A compromised server is revoked on its own.
 
 A node does hold shared secrets: the game server's token secret (so tokens home minted validate
 on the node) and the TURN secret (because home mints the credentials the relay checks). With
 those, a rogue node could mislabel rooms or relay traffic it was sent. It could not touch
 anyone's account. That ceiling is why **approval is a person looking before flipping the
-switch**, and why per-node secrets are the planned upgrade as the federation grows.
+switch**.
 
 ## What is deliberately not there
 
