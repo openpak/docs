@@ -1,6 +1,6 @@
 # Nintendo 3DS
 
-On a 3DS running **Luma3DS**, the OpenPak build of **nimbus** lets you choose which account and
+On a 3DS running **Luma3DS**, the **OpenPak 3DS Patcher** (OpenPak's build of Pretendo's nimbus) lets you choose which account and
 network the console uses, and its patches point the console's Nintendo Network services at
 OpenPak. nimbus is a fork of Pretendo Network's nimbus.
 
@@ -17,7 +17,7 @@ OpenPak. nimbus is a fork of Pretendo Network's nimbus.
 ## Install
 
 1. Download `nimbus.cia` (or `nimbus.3dsx`) and `nimbus.3gx` from the
-   [latest nimbus for OpenPak release](https://github.com/openpak/nn-nimbus/releases/latest).
+   [latest OpenPak 3DS Patcher release](https://github.com/openpak/3ds-patcher/releases/latest).
 2. Copy the `3ds/nimbus/` folder from the release to the root of your SD card.
 3. Install `nimbus.cia` with FBI.
 4. Reboot while holding **SELECT**, and make sure **Enable loading external FIRMs and modules**

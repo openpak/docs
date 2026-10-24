@@ -40,11 +40,11 @@ Repository names say which family they belong to:
 | Prefix | Family |
 | --- | --- |
 | `nx-` | Switch infrastructure |
-| `nn-` | Wii U and 3DS infrastructure and clients, and the Wii/DS WFC server and patchers |
+| `nn-` | Wii U and 3DS infrastructure and the Wii/DS WFC server |
 | `np-` | PlayStation 3 |
 | `x360-` | Xbox 360 |
 | `xb-` | Original Xbox |
-| no prefix | core services (`account`, `website`, `saves`, ...), shared game-server hosts (`nex`, `npln`, ...), clients (`app`, `openpak-nro`) and emulators |
+| no prefix | core services (`account`, `website`, `saves`, ...), shared game-server hosts (`nex`, `npln`, ...), clients (`app`, the `*-patcher` repositories such as `switch-patcher`) and emulators |
 
 New Xbox and Xbox 360 service names follow the names the console's own firmware uses.
 
@@ -57,7 +57,9 @@ New Xbox and Xbox 360 service names follow the names the console's own firmware 
 | [`nx-baas`](https://github.com/openpak/nx-baas) | The Switch adapter. |
 | [`nex`](https://github.com/openpak/nex) | The shared NEX/PRUDP game-server host for Wii U, 3DS and Switch titles. |
 | [`app`](https://github.com/openpak/app) | The companion app for Android and iOS. |
-| [`openpak-nro`](https://github.com/openpak/openpak-nro) | OpenPak Setup for the Switch. |
+| [`switch-patcher`](https://github.com/openpak/switch-patcher) | OpenPak Switch Patcher. | 
+| [`wiiu-patcher`](https://github.com/openpak/wiiu-patcher), [`3ds-patcher`](https://github.com/openpak/3ds-patcher), [`wii-patcher`](https://github.com/openpak/wii-patcher), [`ds-patcher`](https://github.com/openpak/ds-patcher) | The OpenPak Wii U, 3DS, Wii and DS Patchers. |
+| [`xbox-patcher`](https://github.com/openpak/xbox-patcher), [`x360-patcher`](https://github.com/openpak/x360-patcher), [`ps3-patcher`](https://github.com/openpak/ps3-patcher) | The Xbox, Xbox 360 and PS3 patchers. Placeholders, not available yet. |
 | [`harbor`](https://github.com/openpak/harbor) | The Switch emulator. |
 | [`docs`](https://github.com/openpak/docs) | This site. |
 

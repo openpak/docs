@@ -9,12 +9,14 @@ Read [before you start](../before-you-start.md) first, and [create your account]
 
 | Console | What you need | Guide |
 | --- | --- | --- |
-| Nintendo Switch | Atmosphère custom firmware and **OpenPak Setup** | [Switch](switch.md) |
-| Wii U | Aroma and the **Inkay** module for OpenPak | [Wii U](wiiu.md) |
-| 3DS | Luma3DS and **nimbus** for OpenPak | [3DS](3ds.md) |
-| Wii | The **Wii WFC patcher** for OpenPak | [Wii](wii.md) |
-| DS | The **DS WFC patcher** for OpenPak | [DS](ds.md) |
-| Xbox, Xbox 360, PS3 | Not ready for players yet | |
+| Nintendo Switch | Atmosphère custom firmware and **OpenPak Switch Patcher** | [Switch](switch.md) |
+| Wii U | Aroma and the **OpenPak Wii U Patcher** | [Wii U](wiiu.md) |
+| 3DS | Luma3DS and the **OpenPak 3DS Patcher** | [3DS](3ds.md) |
+| Wii | The **OpenPak Wii Patcher** | [Wii](wii.md) |
+| DS | The **OpenPak DS Patcher** | [DS](ds.md) |
+| Xbox | **OpenPak Xbox Patcher**, not available yet ([repository](https://github.com/openpak/xbox-patcher)) | |
+| Xbox 360 | **OpenPak Xbox 360 Patcher**, not available yet ([repository](https://github.com/openpak/x360-patcher)) | |
+| PlayStation 3 | **OpenPak PS3 Patcher**, not available yet ([repository](https://github.com/openpak/ps3-patcher)) | |
 
 ## Emulators
 

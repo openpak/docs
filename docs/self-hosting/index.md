@@ -59,7 +59,7 @@ is deliberate:
   install. A separate network needs its own CA, its own certificates for the console-facing
   names, and setup tools built with that CA.
 - **Server address.** Some clients can be pointed elsewhere without a rebuild (for example
-  OpenPak Setup for the Switch reads a server address from `/switch/openpak/server.txt`), but the
+  OpenPak Switch Patcher for the Switch reads a server address from `/switch/openpak/server.txt`), but the
   trust points above still need your own builds.
 
 !!! note "Not ready yet"

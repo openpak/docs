@@ -9,7 +9,7 @@ during the alpha.
 | --- | --- |
 | A game does not work | An issue in the repository that serves it. The game's entry on [openpak.org/titles](https://openpak.org/titles) says which service that is. |
 | The website or your account | An issue in [`website`](https://github.com/openpak/website) or [`account`](https://github.com/openpak/account). |
-| A console setup tool or an emulator | An issue in that repository (for example [`openpak-nro`](https://github.com/openpak/openpak-nro/issues) or [`harbor`](https://github.com/openpak/harbor/issues)). Report OpenPak fork problems to the fork, not upstream. |
+| A console setup tool or an emulator | An issue in that repository (for example [`switch-patcher`](https://github.com/openpak/switch-patcher/issues) or [`harbor`](https://github.com/openpak/harbor/issues)). Report OpenPak fork problems to the fork, not upstream. |
 | Not sure | Sign in and use [openpak.org/help](https://openpak.org/help); the team moves it to the right place. |
 | A security problem | **Never in public.** See below. |
 

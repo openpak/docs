@@ -1,11 +1,11 @@
 # Wii
 
 Wii games used Nintendo Wi-Fi Connection (WFC), which closed long ago. OpenPak runs a WFC
-replacement server based on WiiLink's, and the OpenPak build of WiiLink's **WFC patcher** sends
+replacement server based on WiiLink's, and the **OpenPak Wii Patcher** (a build of WiiLink's WFC patcher) sends
 each game to it.
 
 !!! warning "Alpha, not yet run on hardware"
-    The OpenPak Wii patcher has not been run on a real console yet.
+    The OpenPak Wii Patcher has not been run on a real console yet.
 
 ## What you need
 
@@ -15,7 +15,7 @@ each game to it.
 
 ## The pieces
 
-The [latest Wii WFC patcher release](https://github.com/openpak/nn-wfc-patcher-wii/releases/latest)
+The [latest OpenPak Wii Patcher release](https://github.com/openpak/wii-patcher/releases/latest)
 has two ways in:
 
 - **The launcher**, `openpak-wfc-launcher.dol`: start it from the Homebrew Channel and it boots

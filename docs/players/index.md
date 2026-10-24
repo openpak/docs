@@ -25,8 +25,8 @@ OpenPak is in **public alpha**. This table is a summary; the live, per-feature l
 | Platform | State | Notes |
 | --- | --- | --- |
 | Nintendo Switch | **Working** | Accounts, console link, friends, Nintendo Switch Online membership, avatars and device authentication work. Presence, invitations, matchmaking, NAT traversal and cloud saves are partial. News is alpha. |
-| Wii U | Beta | Accounts, friends and NAT check. Miiverse, SpotPass and eShop are alpha. The console patch (Inkay) is alpha. |
-| 3DS | Beta | As for the Wii U. The console patch (nimbus) is alpha. |
+| Wii U | Beta | Accounts, friends and NAT check. Miiverse, SpotPass and eShop are alpha. The console patch (OpenPak Wii U Patcher) is alpha. |
+| 3DS | Beta | As for the Wii U. The console patch (OpenPak 3DS Patcher) is alpha. |
 | Wii | Beta | Nintendo Wi-Fi Connection. The Wii patcher is alpha. |
 | DS | Beta | Nintendo Wi-Fi Connection. |
 | Xbox (original) | In development | Not ready for players yet. |

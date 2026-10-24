@@ -9,7 +9,7 @@ OpenPak keeps backups of your game saves under your account, whichever machine m
 ## How saves get there
 
 - **Switch (firmware 23.0.0 and 23.0.1):** use the console's own **Save Data Cloud** screen.
-  OpenPak Setup lets the console accept OpenPak's save keys; reboot through the hekate entry
+  OpenPak Switch Patcher lets the console accept OpenPak's save keys; reboot through the hekate entry
   for the system OpenPak runs on after selecting OpenPak.
 - **Harbor:** the same Save Data Cloud screen, in the emulated console.
 - **Other OpenPak emulators** sync saves automatically around a game session, with a conflict

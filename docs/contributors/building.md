@@ -81,9 +81,9 @@ These build with their upstream toolchains, described in each README:
 | Repository | Build |
 | --- | --- |
 | `harbor` | CMake and Ninja (desktop), Gradle (Android), following Eden's build guide |
-| `openpak-nro` | devkitA64 in a container: `podman run --rm -v "$PWD":/src -w /src docker.io/devkitpro/devkita64 make`; `make test` checks the logic on the host |
-| `nn-inkay` | devkitPPC and wut, or the repository's container build |
-| `nn-nimbus` | `docker/build.sh` builds the toolchain image and the app |
+| `switch-patcher` | devkitA64 in a container: `podman run --rm -v "$PWD":/src -w /src docker.io/devkitpro/devkita64 make`; `make test` checks the logic on the host |
+| `wiiu-patcher` | devkitPPC and wut, or the repository's container build |
+| `3ds-patcher` | `docker/build.sh` builds the toolchain image and the app |
 | `app` | Flutter: `flutter pub get`, `flutter test`, `flutter run` (add `--dart-define=OPENPAK_BASE_URL=...` for a local stack) |
 
 Some emulator forks depend on the shared `openpak-client` library, which is not public yet;

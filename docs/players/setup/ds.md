@@ -6,14 +6,14 @@ same server.
 !!! warning "Not ready yet"
     The DS server side is in beta, but there is **no player-ready DS path yet**:
 
-    - The OpenPak DS patcher has no public release yet.
+    - The OpenPak DS Patcher has no public release yet.
     - OpenPak does not publish a DNS address for consoles yet.
 
     This page will get real steps once both exist.
 
 ## What it will look like
 
-The OpenPak DS patcher is a fork of WfcPatcher. It patches a dump of **your own** DS game so
+The OpenPak DS Patcher is a fork of WfcPatcher (repository: [ds-patcher](https://github.com/openpak/ds-patcher)). It patches a dump of **your own** DS game so
 that its WFC names point at OpenPak. It never ships game files.
 
 ## Link the console to your account

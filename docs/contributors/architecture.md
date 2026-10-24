@@ -106,7 +106,7 @@ a player is the same person on every server.
 - **Console DNS.** For consoles whose only setting is a DNS server, a resolver answers from the
   same profile, so real consoles and emulators cannot drift apart.
 - **Trust.** Consoles trust an OpenPak certificate authority, installed by the console-side tool
-  (`openpak-nro`, Inkay, nimbus) or by the emulator.
+  (the OpenPak Switch, Wii U and 3DS Patchers) or by the emulator.
 
 ## Events, not polling the database
 

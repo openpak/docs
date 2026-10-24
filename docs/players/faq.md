@@ -36,7 +36,7 @@ Yes. There is one friend list for every OpenPak platform, and presence is shared
 ## Can I use OpenPak and the official network on the same Switch?
 
 Not on the same system at the same time. Use an emuMMC for OpenPak, and always select
-**Nintendo** in OpenPak Setup, then reboot, before that system talks to Nintendo again.
+**Nintendo** in OpenPak Switch Patcher, then reboot, before that system talks to Nintendo again.
 
 ## Does OpenPak modify my games?
 

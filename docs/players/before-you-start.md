@@ -18,8 +18,8 @@ How to keep the risk low:
   on the SD card), not from the console's internal system memory (sysMMC). Keep sysMMC for
   the vendor, or keep it offline.
 - **Never mix networks on one system.** A system that is set to OpenPak should not also reach
-  the vendor. On the Switch, OpenPak Setup has two choices, OpenPak and Nintendo; always switch
-  back to **Nintendo** in OpenPak Setup, and reboot, before that system talks to Nintendo again.
+  the vendor. On the Switch, OpenPak Switch Patcher has two choices, OpenPak and Nintendo; always switch
+  back to **Nintendo** in OpenPak Switch Patcher, and reboot, before that system talks to Nintendo again.
 - **Already banned consoles** can use OpenPak too. A ban by the vendor does not stop OpenPak.
 - **Emulators** carry no console ban risk, because no real console is involved.
 
@@ -44,11 +44,11 @@ Before you install anything on a console, back up what matters:
 
 ## What OpenPak changes, and how to undo it
 
-- **Switch:** OpenPak Setup writes host rules, a certificate and a boot package on the SD
+- **Switch:** OpenPak Switch Patcher writes host rules, a certificate and a boot package on the SD
   card. Choosing **Nintendo** in the same tool removes them and puts back what was there.
-- **Wii U:** the Inkay module is loaded from the SD card. Remove the file and the console goes
+- **Wii U:** the OpenPak Wii U Patcher module is loaded from the SD card. Remove the file and the console goes
   back.
-- **3DS:** nimbus lets you choose which account and network the console uses.
+- **3DS:** the OpenPak 3DS Patcher lets you choose which account and network the console uses.
 - **Wii and DS:** the patchers redirect a game when it is launched through them. Launch the
   game normally and it goes to the original servers (which no longer exist for most games).
 
