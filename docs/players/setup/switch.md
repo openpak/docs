@@ -1,7 +1,8 @@
 # Nintendo Switch
 
-On a Switch running Atmosphère, **OpenPak Switch Patcher** (`openpak.nro`) switches the console between
-Nintendo's servers and OpenPak's, and back. It is the only thing you install.
+On a Switch running Atmosphère, **OpenPak Switch Patcher** switches the console between
+Nintendo's servers and OpenPak's, and back. It is a HOME menu title: you install it once as an
+NSP, and after that it is updated from the OpenPak eShop like any other software.
 
 !!! danger "Ban risk"
     Run OpenPak from an **emuMMC**, not from sysMMC, and never let a system that is set to
@@ -10,8 +11,9 @@ Nintendo's servers and OpenPak's, and back. It is the only thing you install.
 ## What you need
 
 - A Switch that can run custom firmware, with **hekate** as the bootloader and
-  **Atmosphère 1.12.0** (the official release package) booted from hekate with a standard
+  **Atmosphère 1.12.1** (the official release package) booted from hekate with a standard
   `pkg3` or `fss0` entry in `bootloader/hekate_ipl.ini`.
+- An NSP installer such as DBI, Goldleaf or Tinfoil.
 - System firmware **22.5.0, 23.0.0 or 23.0.1**. OpenPak Switch Patcher refuses to install on any other
   version and tells you which version the console runs.
 - An emuMMC (strongly recommended).
@@ -24,23 +26,39 @@ your console model.
 
 ## Install
 
-1. Download `openpak.nro` from the
-   [latest OpenPak Switch Patcher release](https://github.com/openpak/switch-patcher/releases/latest).
-2. Copy it into the `/switch/` folder on your SD card.
-3. Boot your emuMMC with Atmosphère and open the Homebrew Menu (by default Atmosphère opens it
-   in place of the Album).
-4. Start **OpenPak Switch Patcher**. It shows two entries:
+The first install has two parts: a small boot package that lets the console start OpenPak's
+software, then OpenPak Switch Patcher itself. Both are on the
+[latest OpenPak Switch Patcher release](https://github.com/openpak/switch-patcher/releases/latest).
+
+1. Download `OpenPak-Switch-Patcher-Boot-<version>.zip` and `OpenPak-Switch-Patcher-<version>.nsp`.
+2. Extract the zip onto the root of your SD card. It adds `atmosphere/package3-openpak` (Atmosphère
+   with OpenPak's changes), `bootloader/ini/openpak.ini` (two hekate entries) and a source notice
+   in `switch/openpak/boot-package/`. Your `hekate_ipl.ini` is not changed.
+3. Boot hekate, open **More configs** and choose **OpenPak (emuMMC)**.
+4. Install `OpenPak-Switch-Patcher-<version>.nsp` with your NSP installer.
+5. Start **OpenPak Switch Patcher** from the HOME menu. It shows two entries:
 
     ```
     Nintendo                       Active
     OpenPak
     ```
 
-5. Select **OpenPak** with **A**. The change is written at once.
-6. Accept the reboot it offers. The console only reads its new network setup at boot.
+6. Select **OpenPak** with **A**. The change is written at once.
+7. Accept the reboot it offers. The console only reads its new network setup at boot.
 
-That is all. OpenPak Switch Patcher also keeps your own hekate boot entry working: it builds an
-OpenPak boot package next to the official one and updates the hekate entries itself.
+That is all. Selecting OpenPak points your own hekate boot entries at OpenPak's boot package, so
+from now on you boot the way you always did; the two **More configs** entries are no longer
+needed and you can delete `bootloader/ini/openpak.ini`.
+
+!!! note "Why the boot package comes first"
+    OpenPak's software is signed by OpenPak, not by Nintendo. A console without OpenPak's boot
+    package installs the NSP but cannot start it. The zip contains only Atmosphère (open source)
+    with OpenPak's two small changes, the same file the Switch Patcher itself writes.
+
+!!! note "Coming from openpak.nro"
+    The old Homebrew Menu tool (`openpak.nro`) is no longer released or updated. Install the NSP
+    as above (OpenPak's boot package is already on your card, so step 3 can use your usual
+    entry), then delete `/switch/openpak.nro`.
 
 After OpenPak is active:
 
@@ -52,19 +70,17 @@ After OpenPak is active:
 
 ## What you'll see
 
-A walkthrough from the first launch of OpenPak Switch Patcher to playing online. The wording below is
-what the tool shows on screen.
+A walkthrough from the first launch of OpenPak Switch Patcher to playing online. The wording
+below is what the tool shows on screen.
 
 ### 1. OpenPak Switch Patcher starts
 
-The header reads **OpenPak**, *Network selector*, with a pill on the right that says which
-network is in use: **NINTENDO** (amber) on a console that has never used OpenPak. While it
+The header reads **OpenPak Switch Patcher**, *Network selector*, with a pill on the right that
+says which network is in use: **NINTENDO** (amber) on a console that has never used OpenPak. While it
 starts, the message line says *"Checking openpak.org for network updates..."*.
 
-If there is a newer OpenPak Switch Patcher, it asks *"OpenPak &lt;version&gt; is available. Download
-and restart?"* with **A** Update and **B** Not now. If a previous run saved a problem report,
-it first asks *"OpenPak saved a problem report last time."* with **A** Send, **B** Don't send,
-**X** Always, **Y** Never.
+If a previous run saved a problem report, it asks *"OpenPak saved a problem report last
+time."* with **A** Send, **B** Don't send, **X** Always, **Y** Never.
 
 !!! note "Screenshot coming"
     OpenPak Switch Patcher at first launch, Nintendo active.
@@ -182,9 +198,9 @@ on. See [cloud saves](../cloud-saves.md).
 
 ## Updates and failure reports
 
-- When OpenPak Switch Patcher starts with a connection it checks for a newer release and offers it:
-  **A** to update, **B** for not now. Nothing is downloaded without that yes, and it only ever
-  downloads from the OpenPak Switch Patcher releases on GitHub.
+- New versions of OpenPak Switch Patcher come from the **OpenPak eShop**: the console offers
+  the update like any other software update, or install it from the eShop's Updates section.
+  The tool itself never downloads anything.
 - Some OpenPak changes need you to re-apply: if the tool says *"OpenPak updated the Switch's
   network redirects. Re-apply OpenPak and reboot"*, select OpenPak again and reboot.
 - If the tool fails, it saves a small report under `/switch/openpak/reports/` and asks before
