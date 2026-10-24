@@ -33,6 +33,7 @@ replaced.
 | Downloads | [openpak.org/downloads](https://openpak.org/downloads) |
 | Is it down? | [status.openpak.org](https://status.openpak.org) |
 | Help request (signed in) | [openpak.org/help](https://openpak.org/help) |
+| Community and finding players | [OpenPak Discord](https://discord.gg/nMhjnsB6F6) |
 | Source code | [github.com/openpak](https://github.com/openpak) |
 | Contact | [contact@openpak.org](mailto:contact@openpak.org) |
 

@@ -90,3 +90,9 @@ nav:
       - How federation works: self-hosting/federation.md
       - Becoming a federation node: self-hosting/become-a-node.md
   - License: license.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/nMhjnsB6F6
+      name: OpenPak Discord
