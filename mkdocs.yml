@@ -89,6 +89,7 @@ nav:
       - Deploying: self-hosting/deploy.md
       - How federation works: self-hosting/federation.md
       - Becoming a federation node: self-hosting/become-a-node.md
+      - Ports: self-hosting/ports.md
   - License: license.md
 
 extra:
