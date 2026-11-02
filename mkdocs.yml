@@ -76,20 +76,21 @@ nav:
   - Contributors:
       - contributors/index.md
       - Architecture: contributors/architecture.md
+      - Design: contributors/design.md
+      - Linking a Switch: contributors/console-link-flow.md
       - Repositories: contributors/repositories.md
       - Building and running: contributors/building.md
       - Conventions: contributors/conventions.md
       - Clean-room rule: contributors/clean-room.md
       - Online compatibility: contributors/online-compatibility.md
       - Signed redirect ceiling: contributors/signed-ceiling.md
-      - Port plan: contributors/ports.md
+      - Ports: contributors/ports.md
       - Reporting bugs: contributors/reporting.md
   - Self-hosting:
       - self-hosting/index.md
       - Deploying: self-hosting/deploy.md
       - How federation works: self-hosting/federation.md
       - Becoming a federation node: self-hosting/become-a-node.md
-      - Ports: self-hosting/ports.md
   - License: license.md
 
 extra:

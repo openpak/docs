@@ -57,7 +57,7 @@ once per account, and never lets them migrate.
 | --- | --- |
 | Switch | `nx-baas` (accounts, device auth, console link, friends), with `nx-shop`, `nx-penne`, `nx-pctl`, `nx-bcat` split out by service |
 | Wii U and 3DS | `nn-account`, `nn-friends`, plus content services `nn-boss`, `nn-juxtaposition`, `nn-soap` |
-| Wii and DS | `nn-wfc` |
+| Wii and DS | the `wfc-*` services (`wfc-nas`, `wfc-gpcm`, `wfc-qr2`, `wfc-natneg` and others), one repository per service |
 | PS3 | `np-account`, `np-trophy` |
 | Xbox 360 | `x360-*`, one repository per service |
 | Original Xbox | `xb-*`, one repository per service |
@@ -94,6 +94,23 @@ protocol family, with one small package per game:
 
 Game servers never keep their own accounts. They trust tokens signed for OpenPak identities, so
 a player is the same person on every server.
+
+## What OpenPak deliberately does not serve
+
+A console asks a lot of servers. Answering one badly is worse than not redirecting it at all, so
+each of these is a decision rather than an omission.
+
+| Service | Decision |
+| --- | --- |
+| Telemetry (play reports and similar) | **Never.** Nothing about how somebody plays needs to leave their house. |
+| System updates | **Never.** Firmware is the vendor's to sign; a console pointed at OpenPak for updates is a console that could be bricked. |
+| Shop content (title files, icons, updates) | **Later, for homebrew.** Hosting homebrew through the shop is wanted; it is out of scope for retail content. |
+| The vendor's phone-app API and voice chat path | **Not yet.** OpenPak's companion app speaks OpenPak's own API; console voice chat would need this. |
+| Vendor relay servers used by a few titles | **Not yet.** Matchmaking stays on the game's own protocol; the session hands out a relay URL and token. |
+| NAT check, connection test (Switch) | Not served for the Switch; a console that cannot check its NAT falls back sensibly. |
+
+What is served today, per game and per console, is on the
+[online compatibility](online-compatibility.md) page.
 
 ## How a console finds OpenPak
 

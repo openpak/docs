@@ -20,17 +20,25 @@ released under it.
 
 | File | What it holds |
 | --- | --- |
-| `README.md` | What the service is, **what works and what does not**, how to run and test it. |
+| `README.md` | What the service is, how to run and test it, and what the repository does and does not cover. |
+| `docs/protocol.md` | The protocol or API the service speaks: endpoints, wire formats, codes. |
+| `docs/deploy.md` | How to deploy it: image, settings, ports (from the [ports page](ports.md)), health endpoints. |
 | `CHANGELOG.md` | Dated, one-line history of changes. |
 | `LICENSE` | The licence. |
 | `example.env` | Every setting, commented, with placeholder secrets. |
-| `docs/` | Documents about this repository only: protocol notes, endpoint inventories, design. |
-| `docs/provenance.md` | Where each non-obvious fact came from (see the [clean-room rule](clean-room.md)). |
-| `prds/` | Design documents for planned work. |
+| `docs/provenance.md` | **Only where the repository derives from upstream code or protocol research.** Where each non-obvious fact came from (see the [clean-room rule](clean-room.md)). |
 
-A document that more than one repository follows (a policy, a shared contract, the port plan)
-lives on this site, once. Repositories link to it instead of carrying trimmed copies, which go
-stale.
+Repositories do not carry `notes.md`, `evidence.md` or `next-session.md` files: working notes
+are not documentation, and they go stale.
+
+- **Design documents (PRDs)** for planned work live in the private `openpak/prds` repository, not
+  in the service repository.
+- **The public site is the only place for shared docs.** A document that more than one repository
+  follows (a policy, a shared contract, the port plan) lives on this site, once. Repositories link
+  to it instead of carrying trimmed copies, which go stale.
+- **Status and verification live on the [online compatibility](online-compatibility.md) page and
+  the website catalogue**, never in repository docs. A README says what the service is; whether a
+  game works online is recorded there, once.
 
 ## Never commit
 
@@ -44,9 +52,10 @@ commit, keep it out and describe only the behaviour it shows.
 
 ## READMEs say what is true
 
-A README states what works today and what does not, with the evidence level: verified on real
-hardware, verified in an emulator, or not verified. "A game that launches" is not evidence that
-it works online. Do not round up.
+A README states what the service does and what it does not do. It does not carry per-game
+status: the evidence level (verified on real hardware, verified in an emulator, or not verified)
+is recorded on the online compatibility page. "A game that launches" is not evidence that it
+works online. Do not round up.
 
 ## Testing expectations
 

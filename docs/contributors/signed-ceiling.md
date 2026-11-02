@@ -4,6 +4,7 @@ Every OpenPak client (console setup tools, console DNS, emulators) follows this 
 goal: **adding a redirect family is a server change only**, with no new client release, and a
 compromised server **cannot widen** what clients redirect.
 
+Copy it into your repository's docs if you implement it, and keep it in step with this page.
 If you implement it, implement all of it. If the contract has to change, every implementation
 changes with it.
 
@@ -90,8 +91,8 @@ those bytes. Accept if at least one signature is valid under a pinned key with t
 3. **Cache.** Store the envelope bytes exactly as received, write atomically, and restrict the
    file's permissions where the platform has them.
 4. **Change notice, for the affected platform only.** At boot, record a digest of the
-   *effective* redirect set for the client's platform: the sorted list of applied entries after
-   filtering. While running, re-check ceiling and profile every **6 hours** (±10 % jitter) and
+   *effective* redirect set for the client's platform: the sorted list of applied
+   `family:`, `exact:`, `override:name=ip` and `address:ip` entries after filtering. While running, re-check ceiling and profile every **6 hours** (±10 % jitter) and
    after an OpenPak sign-in. If the digest changes, show **one** notice per new digest, along
    the lines of *"OpenPak updated this system's network redirects. Restart the game (or the
    emulator) to use them."* A change to another platform's list never changes this platform's
@@ -103,10 +104,11 @@ those bytes. Accept if at least one signature is valid under a pinned key with t
 ## Server side
 
 - The ceiling is edited and signed **offline**, on a machine that holds the private key, with a
-  tool that bumps `version` and writes the envelope. The signed file is then copied to the
+  tool (`openpak-policy ceiling show|add|remove|sign`, in the website repository) that bumps
+  `version` and writes the envelope. The signed file is then copied to the
   server, which serves it unchanged.
 - The profile generator and the console DNS validate platform families against the signed
-  ceiling, so adding a family needs no server release either.
+  ceiling instead of a compiled list, so adding a family needs no server release either.
 - Adding a family, end to end: add it to the ceiling and sign, publish the signed file, add the
   family to the platform map the profile is generated from. Clients pick it up at their next
   boot; running ones show the notice.

@@ -7,13 +7,14 @@ bug reports and test results from real consoles and games. Code is welcome too.
 
 - [Architecture](architecture.md): how the pieces fit, and why the account core knows nothing
   about consoles.
+- [Design](design.md) and [linking a Switch](console-link-flow.md): the shared look, and how a console is linked.
 - [Repositories](repositories.md): one repository per service, and how to find the right one.
 - [Building and running](building.md): getting a service running on your machine.
 - [Conventions](conventions.md): licences, repository layout, testing and commits.
 - [Clean-room rule](clean-room.md): what you may and may not use as input. Read this before
   writing any server code.
 - [Online compatibility](online-compatibility.md): the method for bringing a game online.
-- [Signed redirect ceiling](signed-ceiling.md) and [port plan](ports.md): two shared contracts.
+- [Signed redirect ceiling](signed-ceiling.md) and [ports page](ports.md): two shared contracts.
 - [Reporting bugs](reporting.md): what to include, and where security reports go.
 
 ## The short version of the rules

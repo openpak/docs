@@ -41,8 +41,8 @@ At minimum:
 | **A TLS terminator** | In front of everything public (for example Traefik). The website must never be served on a console-facing hostname. |
 
 Then, for each console family you want to serve, its adapter and the services it needs (for
-example `nx-baas` for the Switch, `nn-account` and `nn-friends` for the Wii U and 3DS, `nn-wfc`
-for the Wii and DS), and the game servers for the games you want. The optional
+example `nx-baas` for the Switch, `nn-account` and `nn-friends` for the Wii U and 3DS, the `wfc-*`
+services for the Wii and DS), and the game servers for the games you want. The optional
 platform-neutral services (`saves`, `news`, `mods`, `chat`, `connectivity`) each add a feature.
 See the [architecture](../contributors/architecture.md) and the [port plan](../contributors/ports.md).
 

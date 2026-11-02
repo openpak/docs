@@ -77,7 +77,39 @@ Three details carry the design:
   the next one instead of compounding.
 
 For games that relay through TURN, it is simpler: when a player from a country with a node asks
-for its relay servers, it gets that node's TURN and STUN servers; otherwise home's.
+for its relay servers, it gets that node's TURN and STUN servers; otherwise home's. The game's
+own session-sync relay stays at home on purpose: it shares the matchmaking server's room state,
+and moving it would be the same state-sync problem the game-server role needed solving, for
+traffic that does not need it.
+
+A node's game server validates the tokens home minted, and the same shared secret authenticates
+its room reports. In game-server mode it opens only the game role: the name and matchmaking
+listeners never start on a node.
+
+### How a region is chosen
+
+Only an empty room is ever placed. For every game the same three steps decide where:
+
+1. **An explicit region.** If the host chose a region in the game and the game told OpenPak, that
+   choice wins, wherever the player is.
+2. **Otherwise the account country** of the host, which comes from the player's OpenPak account.
+3. **A fallback chain.** If the region has no node in rotation with spare capacity, the chain is
+   walked and ends at home. **Home always answers.** An unknown choice, a missing country, a stale
+   region list or a failed lookup all mean home, never an error to the console.
+
+Region filters a game uses *inside* its matchmaking (to keep regions apart) are folded into one
+value so the global pool stays whole. Steering decides where packets go; it never splits who can
+see whom.
+
+## What a node may run
+
+A node runs **the node agent, game servers and relays, and nothing else.** Everything that
+knows who a user is stays at home: accounts, console links, friends and presence, saves, the
+website and API, console DNS and the console-facing TLS front doors, the NAT check, and every
+matchmaker. A node receives short-lived tokens bound to one audience and checks them against keys
+or endpoints home controls; it never mints an identity, stores a user or sees a password, session
+cookie or console certificate. Only relay and game-server roles (a game role, a TURN/STUN relay,
+connectivity relay data planes, dedicated game servers) are ever placed on a node.
 
 ## The announce cycle
 
@@ -106,7 +138,8 @@ A node does hold shared secrets: the game server's token secret (so tokens home 
 on the node) and the TURN secret (because home mints the credentials the relay checks). With
 those, a rogue node could mislabel rooms or relay traffic it was sent. It could not touch
 anyone's account. That ceiling is why **approval is a person looking before flipping the
-switch**.
+switch**, and why per-node game-server secrets are the named upgrade for the day nodes are run
+by people OpenPak has not met.
 
 ## What is deliberately not there
 
@@ -114,6 +147,7 @@ switch**.
 - **Room migration.** A node that dies takes its rooms with it; players re-match.
 - **Regional NEX.** NEX gameplay is peer-to-peer, so a regional secure server would split the
   room list for nothing.
+- **Cross-region session-sync relay.** See above: it stays at home.
 - **Data residency.** A region is where you play, not where your data is stored. Every account
   lives in one database at home.
 

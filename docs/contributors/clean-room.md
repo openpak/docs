@@ -41,7 +41,9 @@ OpenPak's shape, with OpenPak's account integration, error handling and conventi
    wiki, the Pretendo Network wiki, SwitchBrew and published research write-ups.
 3. **Compatibly licensed code.** Pretendo Network's AGPL-3.0 libraries (`nex-go`,
    `nex-protocols-go`, `nex-protocols-common-go`) and other code whose licence is compatible
-   with AGPL-3.0-only. Check each dependency's exact version and notices before adding it.
+   with AGPL-3.0-only (for example the MIT-licensed LdnServer). AGPL-3.0 dependencies are fine
+   because AGPL-3.0-only is OpenPak's own licence. Check each dependency's exact version and
+   notices before adding it.
 4. **OpenPak's own repositories.**
 
 ## Never as input
@@ -62,6 +64,12 @@ Record what you could not explain, too. An observation that made no sense, a val
 arbitrary, a behaviour with no cause you could find: write it down and mark it unexplained.
 Another component's measurement is often the missing half. Two facts that contradict each
 other are a finding, not a problem to resolve before writing.
+
+## The working-directory trap
+
+If a third-party tree is ever checked out for inspection, a session started inside it has that
+tree as its working directory, so any bare `ls`, `grep` or `find` lands there without anyone
+intending it. Start work in your own checkout and pin every command to an absolute path.
 
 ## In a pull request
 
