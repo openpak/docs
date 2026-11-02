@@ -83,6 +83,7 @@ nav:
       - Conventions: contributors/conventions.md
       - Clean-room rule: contributors/clean-room.md
       - Online compatibility: contributors/online-compatibility.md
+      - Verified titles: contributors/verified-titles.md
       - Signed redirect ceiling: contributors/signed-ceiling.md
       - Ports: contributors/ports.md
       - Reporting bugs: contributors/reporting.md
