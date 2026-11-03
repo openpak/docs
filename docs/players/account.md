@@ -37,7 +37,7 @@ code. How you link depends on the platform:
 | --- | --- |
 | Switch (console) | From the console's own account screens. See below. |
 | Harbor (Switch emulator) | The first-run setup has an OpenPak account page: **Sign in**, **Create account** or **Later**. You can also link from the emulated console's settings, as on a real Switch. |
-| Wii U | With the OpenPak Wii U Patcher installed, the console's own Nintendo Network ID screens talk to OpenPak. The exact steps have not been verified on hardware yet. |
+| Wii U | With the OpenPak Wii U Patcher installed, the console's own Nintendo Network ID screens talk to OpenPak. Link an existing ID with your OpenPak password. See below. |
 | 3DS | Sign in from the OpenPak 3DS Patcher app (see the [3DS setup](setup/3ds.md)). Not yet verified on hardware. |
 | Wii and DS | These consoles have no login of their own. Play any Wi-Fi Connection game online through OpenPak once, then on your [account page](https://openpak.org/account) choose **Link a Wii or DS** and type the friend code that game shows you. |
 | Other OpenPak emulators | Sign in from the emulator's OpenPak menu. |
@@ -56,6 +56,34 @@ vendor:
 
 Codes are valid for ten minutes and work once. Approval happens on the console on purpose: a
 photo of the screen is not enough to link someone else's account.
+
+### Linking a Wii U
+
+On the Wii U your OpenPak password **is** your console password. Your account already has a
+Wii U Network ID (the same name as your OpenPak handle). There is nothing to create on the
+console, you only link the existing ID.
+
+1. **Once, on openpak.org:** sign out and back in. OpenPak can only prepare your console
+   password while it sees you type your password, so every account needs one fresh sign-in on
+   the website or in the app. After that it stays in step on its own: signing in and changing
+   your password keep the console password the same as your OpenPak password. (A password
+   reset does too, the next time you sign in.)
+2. Open your [account page](https://openpak.org/account) and find **Linked platforms → Sign in
+   on a Wii U or 3DS**. It shows the **Network ID** to type.
+3. On the Wii U, open **System Settings → Users**, pick the user (or create a new user) and
+   choose **Link Nintendo Network ID**, then **Link an existing ID**.
+4. Type the Network ID shown on your account page and your OpenPak password.
+
+If your OpenPak password cannot be typed on a Wii U (longer than 16 characters, accented
+letters, a space, or it contains your Network ID), the account page says so and offers
+**Set a separate console password**. That one is 6 to 16 letters, digits and keyboard symbols,
+without spaces or accents, and must not contain your Network ID. You confirm it with your
+OpenPak password (and your two-step code, if you use one). The app has the same setting in
+its account details.
+
+!!! note
+    The menu names above are the Wii U's own and can differ slightly between languages and
+    system versions. The 3DS uses the same Network ID and password.
 
 ## See and revoke links
 
