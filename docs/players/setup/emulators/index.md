@@ -12,27 +12,27 @@ emulator ever downloads any.
 | Emulator | Console | Based on | State |
 | --- | --- | --- | --- |
 | [Harbor](harbor.md) | Switch | Eden | Alpha. Test builds published. |
-| [Quay](quay.md) | Wii U | Cemu | Early. Not built yet. |
-| [Marina](marina.md) | Wii (and GameCube through the Wii) | Dolphin | Early. Builds on Linux. |
-| [Azahar for OpenPak](azahar.md) | 3DS | Azahar | Transitional. No tested build. |
-| [melonDS for OpenPak](melonds.md) | DS | melonDS | Transitional. No tested build. |
-| [Wharf](wharf.md) | Xbox 360 | Xenia Edge | Experimental. No tested build. |
-| [Berth](berth.md) | Xbox | xemu | Experimental. No tested build. |
-| [Pier](pier.md) | PlayStation 3 | RPCS3 | Experimental. No tested build. |
+| [Quay](quay.md) | Wii U | Cemu | Early. Runs games; no online play tried. Windows nightly. |
+| [Marina](marina.md) | Wii (and GameCube through the Wii) | Dolphin | Early. Builds on Linux; no download. |
+| [Azahar for OpenPak](azahar.md) | 3DS | Azahar | Transitional. Untested; no download. |
+| [melonDS for OpenPak](melonds.md) | DS | melonDS | Transitional. Untested; no download. |
+| [Wharf](wharf.md) | Xbox 360 | Xenia Edge | Experimental. Dashboard sign-in works; no download. |
+| [Berth](berth.md) | Xbox | xemu | Experimental. Dashboard sign-in works; no download. |
+| [Pier](pier.md) | PlayStation 3 | RPCS3 | Experimental. Sign-in works; test nightly. |
 
 Each fork keeps its upstream licence, and none of them is an official release of the project
 it is based on. Report problems to the OpenPak fork, not upstream.
 
 ## Downloads: releases and nightly
 
-Every emulator repository has two kinds of build on its GitHub releases page:
+Where an emulator has a public build, its GitHub releases page can have two kinds:
 
 - **Releases** (`releases/latest`): tagged builds. Where one exists, start here.
 - **Nightly**: a rolling pre-release tagged `nightly`, rebuilt automatically when the source
   changes. It is the newest code and has had no testing at all. Expect it to break.
 
 A nightly build is not a sign that an emulator is ready: the state on each page is what has
-actually been tested. Builds are test builds, signed with a test key where signing applies.
+actually been tested. Some emulators have no download at all yet; their page says so. Builds are test builds, signed with a test key where signing applies.
 
 ## Harbor (Switch)
 
@@ -41,7 +41,7 @@ See [Harbor](harbor.md).
 
 ## Quay (Wii U)
 
-Not ready yet. See [Quay](quay.md).
+Early: runs Wii U games, but no online play has been tried. See [Quay](quay.md).
 
 ## Marina (Wii)
 
@@ -57,12 +57,12 @@ Not ready yet. See [melonDS for OpenPak](melonds.md).
 
 ## Wharf (Xbox 360)
 
-Not ready yet. See [Wharf](wharf.md).
+Experimental: the dashboard signs in to OpenPak. No game has been played online. See [Wharf](wharf.md).
 
 ## Berth (Xbox)
 
-Not ready yet. See [Berth](berth.md).
+Experimental: the dashboard signs in to OpenPak. No game has been played online. See [Berth](berth.md).
 
 ## Pier (PlayStation 3)
 
-Not ready yet. See [Pier](pier.md).
+Experimental: sign-in and friends' presence work, online games do not yet. See [Pier](pier.md).

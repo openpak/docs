@@ -4,15 +4,15 @@ Pier is OpenPak's PS3 emulator, built on RPCS3. It boots the console's own XMB.
 
 ## Status
 
-**Not ready yet.** Sign-in works and friends' online status comes through, but online game
+**Experimental.** Sign-in works and friends' online status comes through, but online game
 sessions do not work yet and part of the setup is still a manual step.
 
 ## Downloads
 
-- **Release:** [github.com/openpak/pier/releases/latest](https://github.com/openpak/pier/releases/latest),
-  once a tagged release exists.
-- **Nightly:** the rolling [`nightly` pre-release](https://github.com/openpak/pier/releases/tag/nightly),
-  rebuilt when the source changes. It is untested: use it to follow progress, not to play.
+- **Release:** none yet; no tagged release exists.
+- **Nightly:** the rolling [`nightly` pre-release](https://github.com/openpak/pier/releases/tag/nightly)
+  has a Linux AppImage and a Windows archive, rebuilt when the source changes. It is the only
+  build; it is a test build, not a finished release.
 
 ## Sign in to OpenPak
 

@@ -10,10 +10,8 @@ and no build is advertised from it until then.
 
 ## Downloads
 
-- **Release:** [github.com/openpak/melonds/releases/latest](https://github.com/openpak/melonds/releases/latest),
-  once a tagged release exists.
-- **Nightly:** the rolling [`nightly` pre-release](https://github.com/openpak/melonds/releases/tag/nightly),
-  rebuilt when the source changes. It is untested: use it to follow progress, not to play.
+There is no public download: no tagged release and no nightly build exist for this fork.
+It can be built from source from [github.com/openpak/melonds](https://github.com/openpak/melonds).
 
 ## Sign in to OpenPak
 

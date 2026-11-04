@@ -3,7 +3,7 @@
 OpenPak runs replacement services for Xbox Live on Xbox 360: sign-in, presence, matchmaking and statistics. A real console reaches them through its DNS setting.
 
 !!! warning "Early stage"
-    The servers are running and have been tested with the Wharf emulator. A real Xbox 360 has not been verified, and the **OpenPak Xbox 360 Patcher** is not available yet. Expect problems and report them.
+    The servers are running, and the dashboard in the Wharf emulator signs in to them. No game has been played online and a real Xbox 360 has not been verified, and the **OpenPak Xbox 360 Patcher** is not available yet. Expect problems and report them.
 
 ## What you need
 

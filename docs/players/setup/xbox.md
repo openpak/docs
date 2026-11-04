@@ -3,7 +3,7 @@
 OpenPak is building replacement services for the original Xbox's Xbox Live. The console reaches them through its DNS setting.
 
 !!! warning "Early stage"
-    Some of the services are running, but no real original Xbox has been verified and the **OpenPak Xbox Patcher** is not available yet. Expect problems.
+    The services are running, and the dashboard in the Berth emulator signs in to them (friends list, sign-up and voice chat sessions). No real original Xbox has been verified and the **OpenPak Xbox Patcher** is not available yet. Expect problems.
 
 ## What you need
 

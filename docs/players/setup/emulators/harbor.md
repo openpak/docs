@@ -15,6 +15,10 @@ invitations, news and cloud saves.
 - **Minecraft: Nintendo Switch Edition**: worked in both directions between a Switch and
   Harbor on Android.
 
+- **Castle Crashers Remastered**, **Lethal League Blaze**, **SpeedRunners** and **PAC-MAN 99**:
+  played online on Harbor desktop (2026-11-03); details in the
+  [verified titles](../../../contributors/verified-titles.md).
+
 Anything not listed is not verified. A game that starts is not proof that it works online.
 
 ## What you need

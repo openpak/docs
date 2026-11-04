@@ -37,8 +37,9 @@ memory only and never modify the console.
 
 With the patcher loaded, the console's own Nintendo Network ID screens talk to OpenPak. Every
 OpenPak account automatically has a Wii U identity, and friends are shared with your other
-OpenPak consoles. The exact sign-in steps on the console have not been verified yet: **not
-ready yet**.
+OpenPak consoles. Your OpenPak password is your console password: follow
+[Linking a Wii U](../account.md#linking-a-wii-u) to link the ID. These steps have not been
+checked on a real console yet.
 
 ## Without a modified console
 
@@ -47,4 +48,4 @@ trust OpenPak's certificate. It is **not ready yet** for players. Use the patche
 
 ## The emulator
 
-The OpenPak Wii U emulator, Quay, is not ready yet. See [emulators](emulators/quay.md).
+The OpenPak Wii U emulator, Quay, is early: it runs games but online play is not tried. See [emulators](emulators/quay.md).

@@ -3,7 +3,7 @@
 OpenPak runs a replacement for PlayStation Network sign-in and the PS3 services around it. A real console reaches them through its DNS setting.
 
 !!! warning "Early stage"
-    The servers are running and have been tested with the Pier emulator. A real PS3 has not been verified, and the **OpenPak PS3 Patcher** is not available yet. Expect problems and report them.
+    The servers are running, and the Pier emulator signs in to them and shows friends online. Online games do not work yet. A real PS3 has not been verified, and the **OpenPak PS3 Patcher** is not available yet. Expect problems and report them.
 
 ## What you need
 

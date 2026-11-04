@@ -8,8 +8,7 @@ same server.
     page will get real steps once it does.
 
 The patched game looks up OpenPak's server names through `*.openpak.org`, so the DS needs no
-special DNS setting: your router's DNS resolves them, once the `*.openpak.org` wildcard record
-is live.
+special DNS setting: your router's DNS resolves them (the `*.openpak.org` record is live).
 
 ## What it will look like
 

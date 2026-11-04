@@ -14,10 +14,8 @@ What exists so far: a **Config → Wii → Connect Nintendo WFC to OpenPak** che
 
 ## Downloads
 
-- **Release:** [github.com/openpak/marina/releases/latest](https://github.com/openpak/marina/releases/latest),
-  once a tagged release exists.
-- **Nightly:** the rolling [`nightly` pre-release](https://github.com/openpak/marina/releases/tag/nightly),
-  rebuilt when the source changes. It is untested: use it to follow progress, not to play.
+There is no public download yet: no tagged release and no nightly build exist for Marina.
+It can be built from source from [github.com/openpak/marina](https://github.com/openpak/marina).
 
 ## Sign in to OpenPak
 

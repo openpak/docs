@@ -26,8 +26,8 @@ has two ways in:
 ## DNS
 
 The patched game looks up OpenPak's server names through `*.openpak.org`, so the Wii needs
-no special DNS setting: the console's normal DNS (your router's) resolves them. The Wii path
-works once the `*.openpak.org` wildcard record is live.
+no special DNS setting: the console's normal DNS (your router's) resolves them. The
+`*.openpak.org` record is live.
 
 ## Link the console to your account
 

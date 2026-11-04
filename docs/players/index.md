@@ -25,14 +25,15 @@ OpenPak is in **public alpha**. This table is a summary; the live, per-feature l
 | Platform | State | Notes |
 | --- | --- | --- |
 | Nintendo Switch | **Working** | Accounts, console link, friends, Nintendo Switch Online membership, avatars and device authentication work. Presence, invitations, matchmaking, NAT traversal and cloud saves are partial. News is alpha. |
-| Wii U | Beta | Accounts, friends and NAT check. Miiverse, SpotPass and eShop are alpha. The console patch (OpenPak Wii U Patcher) is alpha. |
+| Wii U | Beta | Accounts, friends and NAT check. Miiverse, SpotPass and eShop are alpha. The console patch (OpenPak Wii U Patcher) is published but has not been run on a real console. |
 | 3DS | Beta | As for the Wii U. The console patch (OpenPak 3DS Patcher) is alpha. |
-| Wii | Beta | Nintendo Wi-Fi Connection. The Wii patcher is alpha. |
-| DS | Beta | Nintendo Wi-Fi Connection. |
-| Xbox (original) | In development | Not ready for players yet. |
-| Xbox 360 | In development | Not ready for players yet. |
-| PlayStation 3 | In development | Not ready for players yet. |
-| PSP, PS2, PS Vita, PS4, PS5, Xbox One | Planned | Nothing to set up yet. |
+| Wii | Beta | Nintendo Wi-Fi Connection. The Wii patcher is published but has not been run on a real console. |
+| DS | Beta | Nintendo Wi-Fi Connection. The DS patcher has no public release yet. |
+| Xbox (original) | Alpha | Services run and the Berth emulator signs in; no real console tested. Set up by DNS only. |
+| Xbox 360 | Alpha | Services run and the Wharf emulator signs in to the dashboard; no real console or online game tested. Set up by DNS only. |
+| PlayStation 3 | Alpha | Services run and the Pier emulator signs in; no real console or online game tested. Set up by DNS only. |
+| PlayStation 4 | Just started | Only a system-update server exists. Nothing to set up yet. |
+| PSP, PS2, PS Vita, PS5, Xbox One | Planned | Nothing to set up yet. |
 
 ## Which games work
 

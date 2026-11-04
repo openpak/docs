@@ -60,6 +60,7 @@ nav:
           - Xbox: players/setup/xbox.md
           - Xbox 360: players/setup/xbox360.md
           - PlayStation 3: players/setup/ps3.md
+          - PlayStation 4: players/setup/ps4.md
           - Emulators:
               - players/setup/emulators/index.md
               - Harbor (Switch): players/setup/emulators/harbor.md
