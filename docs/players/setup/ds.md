@@ -18,9 +18,10 @@ that its WFC names point at OpenPak. It never ships game files.
 
 ## Link the console to your account
 
-As on the Wii: after a game has been online through OpenPak once, open your
+DS games have no screen that can show a link code, so a DS is linked by its friend code:
+after a game has been online through OpenPak once, open your
 [account page](https://openpak.org/account), choose **Link a Wii or DS** and type the friend
-code the game shows.
+code the game shows. (A Wii shows a link code in Mario Kart Wii; see [Wii](wii.md).)
 
 ## The emulator
 
