@@ -14,9 +14,9 @@ Read [before you start](../before-you-start.md) first, and [create your account]
 | 3DS | Luma3DS and the **OpenPak 3DS Patcher** | [3DS](3ds.md) |
 | Wii | The **OpenPak Wii Patcher** | [Wii](wii.md) |
 | DS | The **OpenPak DS Patcher** | [DS](ds.md) |
-| Xbox | **OpenPak Xbox Patcher**, not available yet ([repository](https://github.com/openpak/xbox-patcher)) | |
-| Xbox 360 | **OpenPak Xbox 360 Patcher**, not available yet ([repository](https://github.com/openpak/x360-patcher)) | |
-| PlayStation 3 | **OpenPak PS3 Patcher**, not available yet ([repository](https://github.com/openpak/ps3-patcher)) | |
+| Xbox | DNS setting; **OpenPak Xbox Patcher** not available yet ([repository](https://github.com/openpak/xbox-patcher)) | [Xbox](xbox.md) |
+| Xbox 360 | DNS setting; **OpenPak Xbox 360 Patcher** not available yet ([repository](https://github.com/openpak/x360-patcher)) | [Xbox 360](xbox360.md) |
+| PlayStation 3 | DNS setting; **OpenPak PS3 Patcher** not available yet ([repository](https://github.com/openpak/ps3-patcher)) | [PlayStation 3](ps3.md) |
 
 ## Emulators
 

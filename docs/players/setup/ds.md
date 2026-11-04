@@ -3,13 +3,13 @@
 DS games used Nintendo Wi-Fi Connection (WFC). OpenPak serves Wii and DS WFC games from the
 same server.
 
-!!! warning "Not ready yet"
-    The DS server side is in beta, but there is **no player-ready DS path yet**:
+!!! warning "Patcher not released yet"
+    The DS server side is in beta, but the OpenPak DS Patcher has no public release yet. This
+    page will get real steps once it does.
 
-    - The OpenPak DS Patcher has no public release yet.
-    - OpenPak does not publish a DNS address for consoles yet.
-
-    This page will get real steps once both exist.
+The patched game looks up OpenPak's server names through `*.openpak.org`, so the DS needs no
+special DNS setting: your router's DNS resolves them, once the `*.openpak.org` wildcard record
+is live.
 
 ## What it will look like
 

@@ -42,9 +42,8 @@ ready yet**.
 
 ## Without a modified console
 
-A path for an unmodified Wii U, using a DNS setting and OpenPak's certificate, exists on the
-server side but is **not ready yet** for players: OpenPak does not publish a DNS address for
-consoles yet.
+A path for an unmodified Wii U needs more than a DNS setting, because the console must also
+trust OpenPak's certificate. It is **not ready yet** for players. Use the patcher above.
 
 ## The emulator
 

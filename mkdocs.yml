@@ -57,6 +57,9 @@ nav:
           - 3DS: players/setup/3ds.md
           - Wii: players/setup/wii.md
           - DS: players/setup/ds.md
+          - Xbox: players/setup/xbox.md
+          - Xbox 360: players/setup/xbox360.md
+          - PlayStation 3: players/setup/ps3.md
           - Emulators:
               - players/setup/emulators/index.md
               - Harbor (Switch): players/setup/emulators/harbor.md

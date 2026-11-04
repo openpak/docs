@@ -23,11 +23,11 @@ has two ways in:
 - **Gecko codes**, `openpak-wfc-gecko-codes.zip`: one code per game, for USB loaders and
   Riivolution.
 
-## DNS: not ready yet
+## DNS
 
-The patched game still looks up OpenPak's server names through the console's DNS setting, and
-OpenPak does not publish a DNS address for consoles yet. Until it does, the Wii path is **not
-ready yet** for players.
+The patched game looks up OpenPak's server names through `*.openpak.org`, so the Wii needs
+no special DNS setting: the console's normal DNS (your router's) resolves them. The Wii path
+works once the `*.openpak.org` wildcard record is live.
 
 ## Link the console to your account
 
