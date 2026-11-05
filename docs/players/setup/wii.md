@@ -31,19 +31,25 @@ no special DNS setting: the console's normal DNS (your router's) resolves them. 
 
 ## Link the console to your account
 
-The Wii has no login of its own, so linking is done with a code.
+The Wii has no login of its own, so linking is done with a code, and a Wii plays online
+only once it is linked.
 
-**Mario Kart Wii** shows the code itself. Connect to Wi-Fi Connection while the console is
-not linked yet: the message of the day on the Wi-Fi menu ends with
-`Link this Wii at openpak.org/link` and a code like `QXZP-7K2M`. Open
-[openpak.org/link](https://openpak.org/link) (or **Link a Wii or DS** in the OpenPak app),
-sign in, enter the code and approve. Nothing else is needed on the console. The code works
-once and expires after 30 minutes; connect again to get a fresh one. A console that is already
-linked is not shown a code.
+1. Connect to Nintendo Wi-Fi Connection in any game. While the console is not linked, the
+   connection is refused and a code is shown:
+    - **Mario Kart Wii** shows a message: `This Wii is not linked to an OpenPak account yet`,
+      a code like `QXZP-7K2M` and a 5-digit number (error code 22100).
+    - **Every other game** shows an error code between **24000 and 29999**. That number is
+      your link code.
+2. Open [openpak.org/link](https://openpak.org/link) (or **Link a Wii or DS** in the OpenPak
+   app), sign in and enter the code or the number. With the 5-digit number, use a phone or
+   computer on the **same Wi-Fi as the Wii**, or also type the name you play as in that game
+   (your Mii's name).
+3. Check that the page names your Wii, the game and your name, and approve.
+4. Connect again in the game: you are online.
 
-**Other games** do not display a message, so use the friend code instead: after the game has
-been online through OpenPak once, open your [account page](https://openpak.org/account),
-choose **Link a Wii or DS** and type the friend code the game shows.
+A code works once and expires after 15 minutes; connecting again shows a fresh one. One account
+can link several consoles; unlink one from your [account page](https://openpak.org/account),
+optionally erasing its online game data. Linking by friend code is no longer possible.
 
 ## Undo
 

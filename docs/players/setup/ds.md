@@ -17,10 +17,21 @@ that its WFC names point at OpenPak. It never ships game files.
 
 ## Link the console to your account
 
-DS games have no screen that can show a link code, so a DS is linked by its friend code:
-after a game has been online through OpenPak once, open your
-[account page](https://openpak.org/account), choose **Link a Wii or DS** and type the friend
-code the game shows. (A Wii shows a link code in Mario Kart Wii; see [Wii](wii.md).)
+A DS plays online only once it is linked to your account.
+
+1. Connect to Nintendo Wi-Fi Connection in the game. While the DS is not linked, the
+   connection is refused with an error code between **24000 and 29999**. That number is your
+   link code.
+2. Open [openpak.org/link](https://openpak.org/link) (or **Link a Wii or DS** in the OpenPak
+   app), sign in and enter the number. Use a phone or computer on the **same Wi-Fi as the DS**,
+   or also type the name you play as in that game (the nickname the game shows, often your DS
+   user name).
+3. Check that the page names your DS and the game, and approve.
+4. Connect again in the game: you are online.
+
+The number works once and expires after 15 minutes; connecting again shows a fresh one.
+Unlink a DS from your [account page](https://openpak.org/account). Linking by friend code is no
+longer possible.
 
 ## The emulator
 

@@ -39,7 +39,7 @@ code. How you link depends on the platform:
 | Harbor (Switch emulator) | The first-run setup has an OpenPak account page: **Sign in**, **Create account** or **Later**. You can also link from the emulated console's settings, as on a real Switch. |
 | Wii U | With the OpenPak Wii U Patcher installed, the console's own Nintendo Network ID screens talk to OpenPak. Link an existing ID with your OpenPak password. See below. |
 | 3DS | Sign in from the OpenPak 3DS Patcher app (see the [3DS setup](setup/3ds.md)). Not yet verified on hardware. |
-| Wii and DS | These consoles have no login of their own. Play any Wi-Fi Connection game online through OpenPak once, then link it. In Mario Kart Wii the Wi-Fi menu message shows a link code: enter it at [openpak.org/link](https://openpak.org/link). For other games, and for a DS, choose **Link a Wii or DS** on your [account page](https://openpak.org/account) and type the friend code the game shows you. |
+| Wii and DS | These consoles have no login of their own and play online only once linked. Connect in any game: it is refused and shows a code (Mario Kart Wii: an 8-character code; other games: an error code from 24000 to 29999). Enter it at [openpak.org/link](https://openpak.org/link) from the same Wi-Fi (or add the name you play as), then connect again. See [Wii](setup/wii.md) and [DS](setup/ds.md). |
 | Other OpenPak emulators | Sign in from the emulator's OpenPak menu. |
 
 ### Linking a Switch
