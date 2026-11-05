@@ -112,3 +112,28 @@ those bytes. Accept if at least one signature is valid under a pinned key with t
 - Adding a family, end to end: add it to the ceiling and sign, publish the signed file, add the
   family to the platform map the profile is generated from. Clients pick it up at their next
   boot; running ones show the notice.
+
+## The release-signing key (console tool self-update)
+
+A second, separate Ed25519 key signs the **release manifests** that console setup tools use to
+update themselves (the PS3 Patcher first). It is **never used for the redirect list**, and the
+ceiling key never signs a release: a leaked release key can push a bad tool build, it cannot widen
+a single redirect.
+
+```
+algorithm  Ed25519
+public     0b0dba96e04e792c9f1ca859eb02d2ddfef9ee8a60f3a856d256d5ab8420d1f8   (hex, 32 bytes raw)
+           Cw26luBOeSyfHKhZ6wLS3f757opg86hW0lbVq4Qg0fg=                        (base64)
+keyid      6f98ce06c0ab668102a7d5a49b6a65453618daccfc4868c1e0d4396f2ca963f5   (sha256 of the raw key)
+```
+
+- The private half is held as a GitHub Actions secret (`PS3_RELEASE_SIGNING_KEY`) of the tool's
+  repository; the release workflow signs `manifest.txt` and publishes `manifest.txt` and
+  `manifest.sig` (128 hex characters, the signature over the exact manifest bytes) next to the package.
+- The manifest is `key=value` lines: `type=openpak-ps3-patcher-release`, `version`, `file`, `size`,
+  `sha256`. Clients pin the public key (a list, so it can be rotated), verify the signature over the
+  exact bytes, check the version is newer, and verify size and sha256 of the download. They install
+  nothing that fails any of these.
+- Transport is not the trust. A console whose TLS stack cannot reach modern TLS fetches the
+  manifest and package over plain HTTP from `updates.ps3.openpak.org`, which relays the newest GitHub
+  release (`GET /api/v1/clients/ps3-patcher/{latest,latest.sig,download/<file>}`).
